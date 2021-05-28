@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-28T16:32:30" hostname="DESKTOP-4IPP4FC" time="0.067">
-  <properties/>
-  <testcase name="givenPassword_WhenAtleast1UpperCase_ShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.067"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
