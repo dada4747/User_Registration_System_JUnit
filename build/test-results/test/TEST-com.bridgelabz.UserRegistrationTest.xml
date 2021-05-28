@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-05-28T09:48:06" hostname="DESKTOP-4IPP4FC" time="0.104">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-28T10:15:55" hostname="DESKTOP-4IPP4FC" time="0.122">
   <properties/>
-  <testcase name="givenFirstName_WhenLessThanThreeChars_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.081"/>
-  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.004"/>
-  <testcase name="givenLastName_WhenFirstLetterUpperCase_ShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenFirstName_WhenHasSpecialChar_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenLastName_WhenHasNumber_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenFirstName_WhenHasNumber_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenLastName_WhenHasSpecialChar_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenLastName_WhenLessThanThreeChars_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenEmailId_WhenProper_ShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.122"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
