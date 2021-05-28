@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-28T09:22:35" hostname="DESKTOP-4IPP4FC" time="0.306">
+  <properties/>
+  <testcase name="givenFirstName_WhenLessThanThreeChars_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.294"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.004"/>
+  <testcase name="givenFirstName_WhenHasSpecialChar_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenFirstName_WhenHasNumber_ShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
