@@ -76,6 +76,11 @@ public class UserRegistrationTest {
         boolean result = userRegistration.validateMobileNum("1234507748");
         Assertions.assertFalse(result);
     }
+    @Test
+    public void givenPassword_WhenMin8Chars_ShouldReturnTrue() {
+        boolean result = userRegistration.validatePassword("nDj1k2*jf");
+        Assertions.assertTrue(result);
+    }
 
 
 }
