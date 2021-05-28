@@ -51,8 +51,31 @@ public class UserRegistrationTest {
     }
     @Test
     public void givenEmailId_WhenProper_ShouldReturnTrue(){
-        boolean result = userRegistration.valudateEmailId("abc.syz@bl.co.in");
+        boolean result = userRegistration.validateEmailId("abc.syz@bl.co.in");
         Assertions.assertTrue(result);
     }
+    @Test
+    public void givenMobileNum_WhenSpaceIsMentioned_ShouldReturnTrue(){
+        boolean result = userRegistration.validateMobileNum("91 9960077482");
+        Assertions.assertTrue(result);
+    }
+    @Test
+    public void givenMobileNum_WhenSpaceNotMentioned_ShouldReturnFalse() {
+        boolean result = userRegistration.validateMobileNum("919960077482");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenMobileNum_WhenLessDigits_ShouldReturnFalse() {
+        boolean result = userRegistration.validateMobileNum("9960077482");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenMobileNum_WhenNotStartWith91_ShouldReturnFalse() {
+        boolean result = userRegistration.validateMobileNum("1234507748");
+        Assertions.assertFalse(result);
+    }
+
 
 }
