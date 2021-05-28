@@ -101,6 +101,19 @@ public class UserRegistrationTest {
         boolean result = userRegistration.validatePassword("mDkk%fDB");
         Assertions.assertFalse(result);
     }
-
-
+    @Test
+    public void givenPassword_WhenHasExact1SpecialChar_ShouldReturnTrue() {
+        boolean result = userRegistration.validatePassword("mDkk%fD1");
+        Assertions.assertTrue(result);
+    }
+    @Test
+    public void givenPassword_WhenNoSpecialChar_ShouldReturnFlase() {
+        boolean result = userRegistration.validatePassword("mDkkfD12");
+        Assertions.assertFalse(result);
+    }
+    @Test
+    public void givenPassword_WhenHasMoreThan1SpecialChar_ShouldReturnFalse() {
+        boolean result = userRegistration.validatePassword("mDkk%f#D1");
+        Assertions.assertFalse(result);
+    }
 }
