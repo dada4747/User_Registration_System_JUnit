@@ -27,5 +27,27 @@ public class UserRegistrationTest {
    boolean result = userRegistration.validateFirstName("Rahul@");
    Assertions.assertFalse(result);
   }
+  @Test
+  public void givenLastName_WhenFirstLetterUpperCase_ShouldReturnTrue(){
+      boolean result = userRegistration.validateLastName("Adsure");
+      Assertions.assertTrue(result);
+  }
+    @Test
+    public void givenLastName_WhenLessThanThreeChars_ShouldReturnFalse() {
+        boolean result = userRegistration.validateFirstName("Ad");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenLastName_WhenHasNumber_ShouldReturnFalse() {
+        boolean result = userRegistration.validateFirstName("Adsure1");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenLastName_WhenHasSpecialChar_ShouldReturnFalse() {
+        boolean result = userRegistration.validateFirstName("Adsure@");
+        Assertions.assertFalse(result);
+    }
 
 }
