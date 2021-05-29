@@ -55,9 +55,9 @@ public class ValidateEmailIdTest {
                 {"abc@gmail.com.aa.au", false}
         });
     }
-@Test
-public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() {
-    boolean result = userRegistration.validateEmailId(emailId);
-    Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId(emailId));
-}
+    @Test
+    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() {
+        boolean result = userRegistration.validateEmailId(emailId);
+        Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId(emailId));
+    }
 }

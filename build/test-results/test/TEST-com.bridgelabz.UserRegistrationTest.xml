@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-29T16:51:40" hostname="DESKTOP-4IPP4FC" time="0.047">
+  <properties/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.047"/>
+  <system-out><![CDATA[Happy
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
