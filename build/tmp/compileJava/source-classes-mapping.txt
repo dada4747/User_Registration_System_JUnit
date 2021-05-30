@@ -1,2 +1,5 @@
+com/bridgelabz/UserResistrationException.java
+ com.bridgelabz.UserResistrationException
+ com.bridgelabz.UserResistrationException$ExceptionType
 com/bridgelabz/UserRegistration.java
  com.bridgelabz.UserRegistration
