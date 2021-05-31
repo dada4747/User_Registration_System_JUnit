@@ -56,12 +56,9 @@ public class ValidateEmailIdTest {
         });
     }
     @Test
-    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() {
-        try {
-            boolean result = userRegistration.validateEmailId(emailId);
-            Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId(emailId));
-        } catch (UserResistrationException exception) {
-            exception.printStackTrace();
-        }
+    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() throws UserResistrationException {
+        boolean result = userRegistration.validateEmailId.validate(emailId);
+        Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId.validate(emailId));
+        userRegistration.checkException(result);
     }
 }
