@@ -1,7 +1,9 @@
+com/bridgelabz/UserRegistrationIFun.java
+ com.bridgelabz.UserRegistrationIFun
+com/bridgelabz/UserFieldPattern.java
+ com.bridgelabz.UserFieldPattern
 com/bridgelabz/UserResistrationException.java
  com.bridgelabz.UserResistrationException
  com.bridgelabz.UserResistrationException$ExceptionType
-com/bridgelabz/UserRegistrationIFun.java
- com.bridgelabz.UserRegistrationIFun
 com/bridgelabz/UserRegistration.java
  com.bridgelabz.UserRegistration

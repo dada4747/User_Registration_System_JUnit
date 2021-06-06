@@ -6,7 +6,7 @@ public class UserResistrationException extends Exception {
         ENTERED_NULL, ENTERED_INVALID
     }
     ExceptionType type;
-    public UserResistrationException(ExceptionType type,String message) {
+    public UserResistrationException(ExceptionType type) {
         super(message);
         this.type = type;
     }

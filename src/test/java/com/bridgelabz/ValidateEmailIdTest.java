@@ -1,33 +1,27 @@
 package com.bridgelabz;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.Arrays;
 import java.util.Collection;
-
-import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class ValidateEmailIdTest {
     private UserRegistration userRegistration;
-    private boolean expectedResult;
     private String emailId;
+    private boolean expectedResult;
 
     public ValidateEmailIdTest(String emailId, boolean expectedResult) {
         super();
-        this.expectedResult = expectedResult;
         this.emailId = emailId;
+        this.expectedResult = expectedResult;
     }
     @Before
     public void initialize(){
         userRegistration= new UserRegistration();
     }
-
-
     @Parameterized.Parameters
     public static Collection emailIds_With_ExpectedResult(){
         return Arrays.asList(new Object[][]{
@@ -56,9 +50,8 @@ public class ValidateEmailIdTest {
         });
     }
     @Test
-    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() throws UserResistrationException {
-        boolean result = userRegistration.validateEmailId.validate(emailId);
-        Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId.validate(emailId));
-        userRegistration.checkException(result);
+    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult()  {
+        boolean output = userRegistration.validateEmailId(emailId);
+        Assert.assertEquals(this.expectedResult, output);
     }
 }
